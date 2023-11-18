@@ -96,6 +96,8 @@ public class Admin {
         System.out.println("Đã thêm thành công.");
     }
     public void suaVoghi(ArrayList<Vo> voGhi){
+        System.out.println("Danh sách vở hiện tại: ");
+        inDanhSach(voGhi);
         System.out.println("Nhập thứ tự vở ghi bạn muốn sửa: ");
         int id = Integer.parseInt(sc.nextLine());
         String tenSP,thHieu,loaiVo,mauSacBia,chatLieu,kichThuoc;
@@ -127,6 +129,8 @@ public class Admin {
         System.out.println("Đã sửa thành công.");
     }
     public void xoaVoGhi(ArrayList<Vo> voGhi){
+        System.out.println("Danh sách vở hiện tại: ");
+        inDanhSach(voGhi);
         System.out.println("Nhập thứ tự bạn muốn xóa: ");
         int id = Integer.parseInt(sc.nextLine());
         if(id <= voGhi.size()){
@@ -155,6 +159,8 @@ public class Admin {
         System.out.println("Đã thêm thành công");
     }
     public void suaButChi(ArrayList<But_Chi> butChi){
+        System.out.println("Danh sách bút chì hiện tại: ");
+        inDanhSach(butChi);
         String tenSP,thHieu,mauSac,chatLieu,doCung;
         int giaBan;
         System.out.println("Nhập thứ tự bạn muốn sửa:");
@@ -181,6 +187,8 @@ public class Admin {
 
     }
     public void xoaButChi(ArrayList<But_Chi> butChi){
+        System.out.println("Danh sách bút chì hiện tại: ");
+        inDanhSach(butChi);
         System.out.println("Nhập thứ tự bạn muốn xóa: ");
         int id = Integer.parseInt(sc.nextLine());
         if(id<= butChi.size()){
@@ -189,6 +197,8 @@ public class Admin {
         } else System.out.println("Không thể thực hiện thao tác.");
     }
     public void themButMuc(ArrayList<But_Muc> butMuc){
+        System.out.println("Danh sách bút mực hiện tại: ");
+        inDanhSach(butMuc);
         String tenSP,thHieu,mauSac,chatLieu,loaiMuc,doMin;
         int giaBan;
         System.out.println("Tên bút mực mới: ");
@@ -210,6 +220,8 @@ public class Admin {
         System.out.println("Đã thêm thành công.");
     }
     public void suaButMuc(ArrayList<But_Muc> butMuc){
+        System.out.println("Danh sách bút mực hiện tại: ");
+        inDanhSach(butMuc);
         System.out.println("Nhập thứ tự bạn muốn sửa: ");
         int id = Integer.parseInt(sc.nextLine());
         String tenSP,thHieu,mauSac,chatLieu,loaiMuc,doMin;
@@ -238,6 +250,8 @@ public class Admin {
         System.out.println("Đã sửa thành công.");
     }
     public void xoaButMuc(ArrayList<But_Muc> butMuc){
+        System.out.println("Danh sách bút mực hiện tại: ");
+        inDanhSach(butMuc);
         System.out.println("Nhập thứ tự bạn muốn xóa: ");
         int id = Integer.parseInt(sc.nextLine());
         if(id<= butMuc.size()) {
@@ -269,6 +283,8 @@ public class Admin {
         System.out.println("Đã thêm sách thành công.");
     }
     public void suaSach(ArrayList<Sach> sach){
+        System.out.println("Danh sách sách hiện tại: ");
+        inDanhSach(sach);
         System.out.println("Nhập thứ tự sách muốn sửa: ");
         int id = Integer.parseInt(sc.nextLine());
         String tenSP,tacGia,theLoai,namXban,ngonNgu,nhaXban;
@@ -297,6 +313,8 @@ public class Admin {
         System.out.println("Đã sửa sách thành công.");
     }
     public void xoaSach(ArrayList<Sach> sach){
+        System.out.println("Danh sách sách hiện tại: ");
+        inDanhSach(sach);
         System.out.println("Nhập thứ tự sách muốn xóa: ");
         int id = Integer.parseInt(sc.nextLine());
         if (id <= sach.size()){
